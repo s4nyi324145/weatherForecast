@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    user-select: none;
+    padding: 0 2rem;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: #0f1624;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.inputForm {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.inputForm h1 {
+    margin: 0;
+    text-align: center;
+    color: #ffd369;
+}
+
+.cityStat h1 {
+    margin: 2rem 0;
+    text-align: center;
+    color: #ffd369;
+    font-size: 2rem;
+}
+
+input {
+    outline: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: 1px solid #ffd369;
+    padding: 0.7rem 1rem;
+    background: #1a2238;
+    color: #ffd369;
+}
+
+button {
+    color: #1a2238;
+    background-color: #ffd369;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6c050;
+}
+
+.cards {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    background-color: #1a2238;
+    color: #ffd369;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: 2px solid #2a5298;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+    box-shadow: 0 10px 25px rgba(255, 211, 105, 0.5);
+}
+
+.days {
+    font-size: 1rem;
+    text-align: left;
+    color: #ffd369;
+}
+
+.descs {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #ffeb99;
+}
+
+.temps {
+    color: #ffd369;
+    margin: 1rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.emojis {
+    font-size: 3rem;
+}
+
+.windspeed, .humidity {
+    display: flex;
+    color: #ffd369;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.windspeed p, .humidity p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+.otherInf {
+    display: flex;
+    width: 100%;
+    color: #ffd369;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+}
+
+
+.wi-thunderstorm { animation: flash 1s linear infinite; }
+.wi-sprinkle, .wi-rain, .wi-sleet, .wi-snow { animation: drop 2s linear infinite; }
+.wi-fog { animation: mist 2s ease-in-out infinite; }
+.wi-day-sunny { animation: spin 10s linear infinite; }
+.emojis .wi-haze, .emojis .wi-smoke, .emojis .wi-dust, .emojis .wi-tornado, .emojis .wi-windy, .emojis .wi-day-cloudy, .emojis .wi-day-cloudy-high, .emojis .wi-cloudy { animation: wave 2s ease-in-out infinite; }
